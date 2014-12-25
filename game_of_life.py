@@ -116,7 +116,6 @@ class Board:
             if not unittest:
                 self.print_first_gen_list()
             self.add_dead_cell()
-            position_list = []
             for cell in self.first_gen_list:
                 neighbors = self.find_neighbors(cell)
                 status = self.check_status(cell.status, neighbors)
